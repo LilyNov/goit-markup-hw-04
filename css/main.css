@@ -115,7 +115,33 @@
 
 .advantage .item::before {
   content: '';
-  display: inline-block;
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  outline: 2px solid tomato;
+
+  background-color: #f5f4fa;
+
+  /* background-image: url('../img/antenna.svg'); */
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: center;
+}
+
+.advantage .item.attention::before {
+  background-image: url('../img/antenna.svg');
+}
+
+.advantage .item.punctual::before {
+  background-image: url('../img/clock.svg');
+}
+
+.advantage .item.planning::before {
+  background-image: url('../img/diagram.svg');
+}
+
+.advantage .item.technologies::before {
+  background-image: url('../img/astronaut.svg');
 }
 
 .section h2 {
