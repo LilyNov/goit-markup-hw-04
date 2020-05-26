@@ -154,10 +154,32 @@ margin-left: 50px; */
 }
 
 .cont-nav .link {
+  display: inline-flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.cont-nav .mail.link::before {
+  content: '';
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  background-image: url('../img/mailicon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cont-nav .phone.link::before {
+  content: '';
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  background-image: url('../img/phoneicon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* Футер */
@@ -250,11 +272,13 @@ margin-left: 50px; */
 }
 
 .button.primary {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   min-width: 200px;
   border-radius: 4px;
   padding: 10px 32px;
   text-align: center;
+  cursor: pointer;
 
   color: var(--primary-white-color);
   background-color: var(--accent-text-color);
@@ -266,10 +290,14 @@ margin-left: 50px; */
   letter-spacing: 0.06em;
 }
 
-.foot-follow .img-btn {
+.button.primary::after {
+  content: '';
+  width: 24px;
+  height: 24px;
   margin-left: 10px;
+  background-image: url('../img/icon/icon-send.svg');
+  background-size: contain;
 }
-
 .copyrigyt {
   margin-top: 0;
   margin-bottom: 0;
