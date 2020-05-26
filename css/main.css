@@ -21,16 +21,39 @@
 .section.hero {
   padding-top: 0;
   padding-bottom: 0;
-  background-image: url(../img/hero/hero-img.jpg);
+}
+
+.hero > .overley {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+
+  background-image: rgba(47, 48, 58, 0.8), url('../img/hero/hero-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
+/* .hero > .overley {
+  max-width: 1600px;
+  height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.2),
+      rgba(0, 255, 0, 0.2)
+    ),
+    url('../img/hero/hero-img.jpg');
 
-.bg {
-  background-color: rgba(47, 48, 58, 0.8);
-}
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
 
 .hero {
-  background-color: rgb(198, 198, 199);
   text-align: center;
 }
 
