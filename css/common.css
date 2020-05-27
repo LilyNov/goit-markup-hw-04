@@ -243,6 +243,56 @@ margin-left: 50px; */
   letter-spacing: 0.03em;
 }
 
+/* Ссылки соц сетей футер */
+
+.social .list {
+  display: flex;
+  justify-items: center;
+}
+
+.social .link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  /* background-image: url('../img/icon/footer/instagram-f.svg'); */
+
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.social .link.inst {
+  background-image: url('../img/icon/footer/instagram-f.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social .twit {
+  background-image: url('../img/icon/footer/twitter-f.svg');
+}
+
+.social .face {
+  background-image: url('../img/icon/footer/facebook-f.svg');
+}
+
+.social .linkd {
+  background-image: url('../img/icon/footer/linkedin-f.svg');
+}
+
+.foot-link .social .item {
+  margin-right: 10px;
+}
+
+.foot-link .social .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.social .link:hover {
+  background-color: var(--accent-text-color);
+}
+
 .input {
   padding-top: 18px;
   padding-bottom: 18px;
@@ -298,6 +348,7 @@ margin-left: 50px; */
   background-image: url('../img/icon/icon-send.svg');
   background-size: contain;
 }
+
 .copyrigyt {
   margin-top: 0;
   margin-bottom: 0;
