@@ -31,6 +31,7 @@ img {
 .link {
   text-decoration: none;
   color: var(--primery-text-color);
+  cursor: pointer;
 }
 
 .container {
@@ -113,7 +114,7 @@ img {
   align-items: center;
 }
 
-.cont-nav > .item {
+.cont-nav > .item.phone {
   margin-left: 30px;
 }
 
@@ -160,26 +161,27 @@ margin-left: 50px; */
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--primery-text-color);
 }
 
-.cont-nav .mail.link::before {
-  content: '';
+/* svg иконка почты */
+.cont-nav .mail-icon {
   width: 16px;
   height: 11px;
   margin-right: 10px;
-  background-image: url('../img/mailicon.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
+
+  fill: currentColor;
+  cursor: pointer;
 }
 
-.cont-nav .phone.link::before {
-  content: '';
+/* svg иконка телефон */
+.cont-nav .phone-icon {
   width: 10px;
   height: 15px;
   margin-right: 10px;
-  background-image: url('../img/phoneicon.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
+
+  fill: currentColor;
+  cursor: pointer;
 }
 
 /* Футер */
@@ -251,34 +253,25 @@ margin-left: 50px; */
 }
 
 .social .link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
 
+  color: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
-  /* background-image: url('../img/icon/footer/instagram-f.svg'); */
 
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 50%;
 }
 
-.social .link.inst {
-  background-image: url('../img/icon/footer/instagram-f.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+.social .social-icon {
+  fill: currentColor;
 }
 
-.social .twit {
-  background-image: url('../img/icon/footer/twitter-f.svg');
-}
-
-.social .face {
-  background-image: url('../img/icon/footer/facebook-f.svg');
-}
-
-.social .linkd {
-  background-image: url('../img/icon/footer/linkedin-f.svg');
+.social .link:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
 }
 
 .foot-link .social .item {
@@ -289,14 +282,10 @@ margin-left: 50px; */
   margin-right: 0;
 }
 
-.social .link:hover {
-  background-color: var(--accent-text-color);
-}
-
 .input {
   padding-top: 18px;
   padding-bottom: 18px;
-  width: 270px;
+  width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
