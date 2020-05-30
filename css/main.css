@@ -252,11 +252,11 @@
   margin-bottom: 24px;
 }
 
-.team .item {
+.team .item.social {
   margin-right: 10px;
 }
 
-.team .item:nth-child(4n) {
+.team .item.social:nth-child(4n) {
   margin-right: 0;
 }
 
