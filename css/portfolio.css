@@ -69,7 +69,8 @@
 
 .text {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 20px; /* для полного фокуса карточки задаю не margin-bottom а  padding-bottom: 20px */
 
   font-weight: 400;
   font-size: 16px;
