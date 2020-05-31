@@ -269,7 +269,8 @@ margin-left: 50px; */
   fill: currentColor;
 }
 
-.social .link:hover {
+.social .link:hover,
+.social .link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-text-color);
 }

@@ -272,11 +272,11 @@
   color: var(--color-social-links);
 }
 
-.team .link:hover,
+/* .team .link:hover,
 .team .link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-text-color);
-}
+} */
 
 .team .social-icon {
   fill: currentColor;
