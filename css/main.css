@@ -272,7 +272,8 @@
   color: var(--color-social-links);
 }
 
-.team .link:hover {
+.team .link:hover,
+.team .link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-text-color);
 }
@@ -308,7 +309,8 @@
   color: var(--color-social-links);
 }
 
-.customer .link:hover {
+.customer .link:hover,
+.customer .link:focus {
   color: var(--accent-text-color);
 }
 
